@@ -27,9 +27,9 @@ ContactList.propTypes = {
 		propTypes.shape({
 		  id: propTypes.string.isRequired,
 		  name: propTypes.string.isRequired,
-		  phone: propTypes.string.isRequired,
+		  number: propTypes.string.isRequired,
 		})
-	),  
+	).isRequired,  
 		onDeleteContact: propTypes.func.isRequired,
 };
 
