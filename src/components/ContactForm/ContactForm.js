@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import { nanoid } from 'nanoid';
 import s from './ContactForm.module.css';
 
 class ContactForm extends Component {
@@ -11,7 +10,7 @@ class ContactForm extends Component {
 
     hendleChange = event => {
         const { name, value } = event.currentTarget;
-        this.setState({[name] : value, id: nanoid(),});
+        this.setState({[name] : value});
     }
 
     hendleSubmit = event => {
