@@ -33,7 +33,8 @@ class App extends Component {
   };
 
   changeFilter = e => {
-    this.setState({ filter: e.currentTarget.value });
+    const lowerCaseFilter= e.currentTarget.value.toLowerCase();
+    this.setState({ filter: lowerCaseFilter});
   };
 
   getVisibleContact = () => {

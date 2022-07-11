@@ -62,9 +62,8 @@ class ContactForm extends Component {
     }
 }
 
-ContactForm.propTypes = {
-  name: propTypes.string,
-  number: propTypes.number,
+ContactForm.propType = {
+    hendleSubmit: propTypes.func.isRequired,
 };
 
 export default ContactForm;
